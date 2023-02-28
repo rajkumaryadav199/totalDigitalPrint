@@ -1,0 +1,159 @@
+
+.fo-Cont{
+    width: 100%;
+   
+    height: auto;
+    background:rgb(33,33,33);
+    display: grid;
+   color: white;
+   position:static;
+   font-family: Poppins;
+   font-size: 1rem;
+   line-height: 1.6;
+   overflow-wrap: break-word;
+    }
+
+ 
+
+.foText{
+    font-size: 1rem;
+}
+.foA{
+      
+        position: static;
+        grid-area: A;
+       
+}
+.foB{
+    grid-area: B;
+      position: static;
+      float: none;
+      margin: 2px;
+     padding: 1px; 
+     text-align: left;
+    }
+.foC{
+        margin: 2px;
+      
+        grid-area: C;
+        padding: 2px;
+        position: static;
+        float: none;
+        text-align: left;
+
+    }
+@media only screen and (max-width: 400px) {
+      .fo-Cont{
+         grid-template-areas: "A"
+                             "B"
+                             "C";
+        padding: 10px;
+        float: none;
+        margin: 10px;
+        }
+          .foA > img{
+        
+              margin-left: 0px;
+            width:80%;
+            height:35%;
+           
+        }
+        .foA{
+            font-size: 2.5rem; 
+            word-spacing: 5px;
+            margin-left: 50px;
+        }
+        .foB{
+            margin-left: 50px;
+        }
+        .foLogo{
+       margin-left: 0px;
+   display: flex;
+     
+      
+        }
+        .foText{
+            margin-left: 0px;
+        }
+        .foIcon1{
+            margin-left: 20px;
+        }
+        }
+
+@media only screen and (400px <= width <=768px) {
+    .fo-Cont{
+        grid-template-areas: "A A B C";
+                             
+           }
+ 
+    .foB{
+            margin:0px 20px 0px 20px;
+           
+          }
+    .foLogo{
+            margin-left: 0px;
+            display: flex;
+           
+             }
+    .foIcon1{margin-left: 20px;}
+    .foA{
+            padding:0px 20px 0px 10px;
+        }
+    .foA > img{
+        
+       
+            width:80%;
+            height:35%;
+           
+        }
+    .foC{
+            margin: 10px;
+        }
+       
+}
+
+@media only screen and (min-width: 769px) {
+  .fo-Cont{
+        grid-template-areas: "A B ."
+                             "C C C";
+ 
+        }
+        h4{
+            font-size: 1.r2em;
+        }
+        span{
+          font-size: 1.5rem;  
+        }
+  .foA{
+           margin: 0 50px 0 20px;
+        
+
+           }
+ .foLogo{
+            text-align: left;
+           
+            
+            margin-bottom: 50px 0px 0px 100px;
+
+          
+        }
+.foC{
+    margin-top: 0px;
+            margin-left: 120px;
+        }
+.foA > img{
+        
+       width:70%;
+            height:25%;
+           
+        }
+.foIcon{
+            margin: 50px;
+        }
+        .foText{
+            margin-left: 15%;
+            font-size: 1.5rem;
+        }
+     
+}
+
