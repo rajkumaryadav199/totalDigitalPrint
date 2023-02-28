@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
    <div className='nav-cont'>
    <div className='nav-logo'>
-    <img src='https://totaldigitalprints.com/wp-content/uploads/2022/09/logo.png' alt='logo' />
+    
    </div>
   <div className='nav-ele'>
    <NavLink  to="/">

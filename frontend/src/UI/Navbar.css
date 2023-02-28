@@ -36,7 +36,9 @@
 
             width:60%;
             height:60%;
-
+           
+            background-image: url("https://totaldigitalprints.com/wp-content/uploads/2022/09/logo.png");
+            background-size: cover;
         }
 }
 
