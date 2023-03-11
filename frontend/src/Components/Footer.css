@@ -116,7 +116,6 @@
   .fo-Cont{
         grid-template-areas: "A B ."
                              "C C C";
- 
         }
         h4{
             font-size: 1.r2em;
@@ -125,7 +124,10 @@
           font-size: 1.5rem;  
         }
   .foA{
-           margin: 0 50px 0 20px;
+           padding-left: 15%;
+           padding-right: 20%;
+           text-align: left;
+
         
 
            }
