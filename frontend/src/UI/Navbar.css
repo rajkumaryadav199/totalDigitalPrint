@@ -12,19 +12,25 @@
         height:auto;
        display: flex;
        flex-direction: row;
-       background: #000;
+       background-color: #000;
        justify-content:space-around ;
-    
+
    
       
            }
     .nav-ele{
-        width: 100%;
+        width: 50%;
         height:80px;
         justify-content: space-between;
         display: flex;
         flex-direction: row;
-        
+        align-items: center;
+        align-content: center;
+        text-decoration: none;
+        color: white;
+        margin-right: 100px;
+        /* margin: auto; */
+       
         }
 
         .nav-logo{
@@ -33,13 +39,20 @@
            
         }
         .nav-logo>img{
-
-            width:60%;
+             width: 60%;
             height:60%;
-           
-            background-image: url("https://totaldigitalprints.com/wp-content/uploads/2022/09/logo.png");
+            /* background-image: url("https://totaldigitalprints.com/wp-content/uploads/2022/09/logo.png"); */
             background-size: cover;
+            color: white;
         }
 }
 
-
+.navcont{
+    color: white;
+    font-size:18px;
+    text-decoration: none;
+    font: weight 600px;
+}
+.active-nav{
+    color: red;
+}

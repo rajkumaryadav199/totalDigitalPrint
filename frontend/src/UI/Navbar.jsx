@@ -7,20 +7,23 @@ const Navbar = () => {
   return (
    <div className='nav-cont'>
    <div className='nav-logo'>
-    
+    <img src='https://totaldigitalprints.com/wp-content/uploads/2022/09/logo.png'/>
    </div>
   <div className='nav-ele'>
-   <NavLink  to="/">
-    Home
+   <NavLink  to="/"
+className={({ isActive }) => isActive ? "active-nav navcont" : "navcont"}
+    >
+    HOME
    </NavLink>
 
-   <NavLink  to="/About">About</NavLink>
-   <NavLink  to="/Tax">Tax</NavLink>
-   <NavLink  to="/Contact">Contact</NavLink>
+   <NavLink  to="/About"
+   className={({ isActive }) => isActive ? "active-nav navcont" : "navcont"}>ABOUT</NavLink>
+   <NavLink  to="/Tax" className={({ isActive }) => isActive ? "active-nav navcont" : "navcont"}>TAX</NavLink>
+   <NavLink  to="/Contact" className={({ isActive }) => isActive ? "active-nav navcont" : "navcont"}>CONTACT</NavLink>
 
    
-   <NavLink  to="/Apply">Apply</NavLink>
-   <NavLink  to="/Portal"> Portal</NavLink>
+   <NavLink  to="/Apply" className={({ isActive }) => isActive ? "active-nav navcont" : "navcont"}>APPLY</NavLink>
+   {/* <NavLink  to="/Portal" className={({ isActive }) => isActive ? "active-nav navcont" : "navcont"}> PORTAL</NavLink> */}
  
    
 

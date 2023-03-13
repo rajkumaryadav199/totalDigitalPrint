@@ -1,3 +1,57 @@
+body{
+   box-sizing: border-box; 
+   overflow-x: hidden;
+}
+.incount{
+   display:flex ;
+   flex-direction: column;
+   width: 250px;
+   height:150px;
+   font-size: medium;
+   font-weight: 600;
+   line-height: 10px;
+   align-content: center;
+  vertical-align: middle;
+   margin:auto;
+   
+
+}
+.logoBox{
+   width:200px;
+   height:auto;
+ 
+   margin: 0 auto;
+}
+.logobg{
+   width:100px ;
+   height: 100px;
+   border-radius: 50%;
+   text-align: center;
+   align-items: center;
+   margin: 20px auto;
+   background: #000;
+
+}
+.logoBox>h5{
+
+   color: #000000;
+   font-weight: 500;
+   font-size: 20px;
+
+}
+.logoItem{
+   margin: auto;
+   margin-top: 28px;
+}
+.incount>h5{
+   font-weight: 600;
+   margin-top: 10px;
+   
+   color: white;
+   font-size: 15px;
+}
+
+
 
 @media only screen and (max-width: 400px) {
 
@@ -9,48 +63,466 @@
 @media only screen and (min-width: 769px) {
     .home-bg{
         width: 100%;
-        height:500px;
-        
+        height:590px;
+        background-image:linear-gradient(rgba(0,0,0,0.05),rgba(0,0,0,0.80)) ,url( "https://totaldigitalprints.com/wp-content/uploads/2022/09/w_blog2.jpg");
+        background-size:100% 136%;
+        background-repeat: no-repeat;
         background-size: cover;
-padding: 2px;
-margin-bottom: 10px;
-        background-image: url("https://totaldigitalprints.com/wp-content/uploads/2022/09/w_blog2.jpg");
-           }
+        padding-top: 2px;
+        /* margin-bottom: 10px; */
+        position: relative;
+        
+        z-index: 0;
+    }
 
-           .about-us{
-            width:100%;
-            height:500px ;
-            border: 1px solid red;
-        }
-
-        .we-pro{
-            width:100%;
-            height:400px ;
-            border: 1px solid red;
-        }
-        .conslt{
-            width:100%;
-            height:400px ;
-            border: 1px solid red;
-        }
-        .ourService{
-            width:100%;
-            height:400px ;
-            border: 1px solid red;
-        }
-        .counter{
-            width:100%;
-            height:400px ;
-            border: 1px solid red;
-        }
-        .overview{
-            width:100%;
-            height:400px ;
-            border: 1px solid red;
-        }
-        .people{
-            width:100%;
-            height:400px ;
-            border: 1px solid red;
-        }
+ .home-bg>h1{
+     font-family: Poppins;
+     line-height: 56px;
+     font-weight: 400;
+     font-size: 35px;
+     color: white;
+    position: absolute;
+     top: 45%;
+     left: 4%;
+     z-index: 1;
+     }
+ .home-bg>p{
+     font-family: Poppins;
+     line-height: 26px;
+     font-weight: 400;
+     font-size: 17px;
+     color: white;
+    position: absolute;
+    text-align: left;
+     top: 65%;
+     left: 4%;
+     z-index: 1;
+     }
+.btn{
+    width: 15%;
+    height: 40px;
+    font-family: Poppins;
+    line-height: 26px;
+    font-weight: 400;
+    font-size: 17px;
+    color: white;
+    background-color: rgb(0,123,255);
+    position: absolute;
+    border: none;
+    border-radius: 10px;
+    top: 90%;
+    left: 4%;
+    z-index: 1;
 }
+.homeline{
+    width: 15%;
+    height: 4px;
+    background-color: rgb(0,123,255);
+    position: absolute;
+    top: 65%;
+    left: 4%;
+    z-index: 1;
+}
+ .about-us{
+  width:99%;
+  height:400px ;
+  padding: 50px 0px;
+  display: flex;
+
+  justify-content: space-around;
+ }
+ 
+ .aboutimage{
+    width:45%;
+    height:400px ;
+ 
+    border-radius: 30px;
+ }
+ .aboutimage>img{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    object-fit: cover;
+ }
+ .aboutcontent{
+    width:40%;
+    height:370px ;
+
+    padding: 60px 0px 0px 20px;
+    text-align: left;
+    /* border-radius: 30px; */
+ }
+ .aboutcontent>h1{
+   font-size: 45px;
+   font-family: Montserrat;
+   font-weight: 700;
+}
+.aboutcontent>p{
+   font-size: 16px;
+   font-family:Poppins;
+   font-weight: 500;
+   line-height: 26px;
+}
+.aboutusline{
+   width: 15%;
+   height: 4px;
+   background-color: rgb(0,123,255);
+
+}
+ .aboutcontent>button{
+   width: 25%;
+   height: 35px;
+   font-family: Poppins;
+   line-height: 18px;
+   font-weight: 400;
+   font-size: 18px;
+   color: white;
+   background-color: rgb(0,123,255);
+  
+   border: none;
+  
+ }
+  
+ .we-pro{
+width:100%;
+height:550px ;
+
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+ }
+ .we-procontext{
+    width:25%;
+    height:490px ;
+    /* border: 1px solid rgb(68, 6, 153); */
+    text-align: left;
+    /* padding: 60px 0px 0px 20px; */
+ }
+ .we-procontext>h1{
+   font-size: 35px;
+   font-weight: 700;
+   
+ }
+ .ourtext{
+   font-size: 16px;
+   font-family: Poppins;
+   line-height: 1rem;
+   word-spacing: 8px;
+
+   /* font-weight: 600; */
+ }
+ .we-proline{
+   width: 15%;
+   height: 4px;
+   background-color: rgb(0,123,255);
+ }
+ .we-procontext>button{
+   font-size: 16px;
+   line-height: 16px;
+   font-weight: 400;
+  margin-left: 20%;
+   width: 45%;
+   height: 35px;
+   border: none;
+   background-color: rgb(0,123,255);
+   color: white;
+ }
+ .ourpurpose{
+   width:28%;
+   height:480px ;
+   /* border: 1px solid rgb(68, 6, 153); */
+   /* padding: 60px 0px 0px 20px; */
+}
+.purposeimage{
+   width:100%;
+   height:340px ;
+   border-radius: 25px;
+   /* border: 1px solid rgb(68, 6, 153); */
+}
+.purposeimage>img{
+   width:100%;
+   height:100% ;
+   border-radius: 25px;
+}
+.ourtitle{
+   font-family: Poppins;
+   font-size: 28px;
+   line-height: 28px;
+   font-size: 600;
+   color: rgb(0,123,255);
+}
+ .our-mission{
+    width:25%;
+    height:500px ;
+    /* border: 1px solid rgb(68, 6, 153); */
+    /* padding: 60px 0px 0px 20px; */
+ }
+
+.conslt{
+ width:100%;
+ height:400px ;
+
+ background-image: url("https://totaldigitalprints.com/wp-content/uploads/2022/09/w_blog1.jpg");
+ background-size:100% 130%;
+background-repeat: no-repeat;
+/* padding-top: 2px; */
+        /* margin-bottom: 10px; */
+position: relative;
+z-index: 0;
+}
+.consltline{
+   width: 10%;
+   height: 4px;
+   background-color: rgb(0,123,255);
+   position: absolute;
+   top: 40%;
+   left: 45%;
+   z-index: 1;
+}
+.conslt>p{
+   font-family: Montserrat;
+   position: absolute;
+   font-weight: 700;
+   font-size: 27px;
+   color: white;
+   line-height: 56px;
+   top: 20%;
+   left: 20%;
+   z-index: 1;
+}
+.conslt>button{
+   width: 20%;
+   height: 60px;
+   font-family: Poppins;
+   line-height: 18px;
+   font-weight: 400;
+   font-size: 18px;
+   color: white;
+   background-color: rgb(0,123,255);
+   position: absolute;
+   border: none;
+   border-radius: 6px;
+   top: 65%;
+   left: 40%;
+   z-index: 1;
+}
+  .ourService{
+   display: flex;
+   flex-direction: column;
+   width:100%;
+   height:auto;
+ 
+}
+.servicedisplay{
+   width: 100%;
+   height: auto;
+  
+ display: grid;
+ grid-gap: 50px;
+ grid-template-columns: repeat(auto-fit, minmax(400px, 1fr) ) ;
+
+ color: #444;
+   
+}
+.logoDiv{
+
+   height: 200px;
+  
+}
+.serviceline>h1{
+   font-size: 35px;
+   font-weight: 700;
+}
+.serviceunderLine{
+  width: 10%;
+  height: 4px;
+      background-color: rgb(0,123,255);
+      position: absolute;
+      left: 45%;
+      z-index: 1;
+   }
+
+.serviceline{
+   width: 100%;
+   height: 100px;
+   margin:0 auto ;
+}
+
+.counter{
+width:100%;
+height:150px ;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+
+}
+
+.overview{
+
+margin: 50px 50px 50px 50px;
+width: 95%;
+height: auto;
+
+display: grid;
+grid-gap: 50px;
+grid-template-columns: repeat(auto-fit, minmax(400px, 1fr) ) ;
+/* padding-left: 20px;
+padding-right: 20px; */
+ }
+
+.overview-left{
+   /* width:40%; */
+   height:auto ;
+   text-align: left;
+   /*  */
+}
+.overview-left>h1{
+   font-size: 45px;
+   width: 700;
+   line-height: 72px;
+  
+   
+}
+/* .overview-left{
+   font-family: Poppins;
+    font-size: 16px;
+    line-height: 1.6;
+} */
+.overview-right{
+   margin-top: 15%;
+   /* width:40%; */
+   border-radius: 30px;
+   background-image: url("https://totaldigitalprints.com/wp-content/uploads/2022/09/team1.jpg");
+   background-size:100% 100%;
+   background-repeat: no-repeat;
+   height:500px ;
+   /*   */
+}
+.overview-flex{
+   display: flex;
+   align-items: center;
+}
+.overview-flex>div{
+   height:18px;
+   padding: 1px;
+}
+.overview-flex>h5{
+   padding-left: 10px;
+}
+.view-button{
+   display: flex;
+   width:90% ;
+   margin-top: 20px;
+   align-items: center;
+  justify-content: space-between;
+}
+.contactbtn{
+   width: 35%;
+   height: 30px;
+   font-family: Poppins;
+   line-height: 14px;
+   display: flex;
+   justify-content: space-around;
+   font-weight: 400;
+   font-size: 14px;
+   color: white;
+   background-color: rgb(0,123,255);
+   border: none;
+   border-radius: 18px;
+   align-items: center;
+ 
+}
+.applybtn{
+   width: 45%;
+   height: 30px;
+   font-family: Poppins;
+   line-height: 14px;
+   font-weight: 400;
+   font-size: 14px;
+   
+   color: white;
+   background-color: rgb(7, 7, 7);
+   border: none;
+   border-radius: 18px;
+}
+.people{
+    width:100%;
+    height:auto ;
+    margin-bottom: 50px;
+  
+   }
+.sub-people{
+
+margin-top: 50px;
+width: 100%;
+height: auto;
+
+display: grid;
+grid-gap: 50px;
+
+grid-template-columns: repeat(auto-fit, minmax(400px, max-content));
+}
+   .jack{
+      /* width:25%; */
+    height:350px ;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /*  */
+    font-size: 17px;
+    line-height: 26px;
+    font-weight: 400;
+    text-align: left;
+    padding: 10px 20px 10px 20px;
+ 
+   }
+   .jackimg{
+  
+      height: 100px;
+    
+   }
+   .jack-flex{
+      width: 100%;
+      
+      display: flex;
+      flex-direction: row;
+ 
+   }
+   .jack> p:nth-child(2){
+       padding-top: 10px;
+       
+   }
+   .jack-flex>h3{
+      font-size: 20px;
+      font-family: Poppins;
+      padding: 10px;
+      color:   rgb(0,123,255);
+   }
+   .jackimg>img{
+      width: 100%;
+      height: 100%;
+      border-radius: 50px;
+      object-fit: cover;
+   }
+   .jeff{
+      /* width:25%; */
+      height:370px ;
+      /*  */
+      font-size: 17px;
+      line-height: 26px;
+      font-weight: 400;
+      text-align: left;
+      padding: 10px 20px 10px 20px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   }
+   .allCount{
+      width: 25%;
+      height: 100%;
+      background:rgb(0,123,255);
+      padding: 20px;
+      
+    
+       
+   }
+
+
+}
+
